@@ -8,8 +8,9 @@ function App() {
   const [users, setUsers] = useState([])
 
   const buscar_dados = async () => {
-    const {data } = await axios.get('http://localhost:3002');
-    const dados = data.results;
+    const {data } = await axios.get('http://localhost:3000');
+    const dados = data;
+    console.log(data)
     setUsers(dados)
 
   }
