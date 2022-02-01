@@ -10,7 +10,6 @@ function App() {
   const buscar_dados = async () => {
     const {data } = await axios.get('http://localhost:3000');
     const dados = data;
-    console.log(data)
     setUsers(dados)
 
   }
